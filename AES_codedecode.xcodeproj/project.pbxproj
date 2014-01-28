@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8436050A176C7BA500239947 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84360509176C7BA500239947 /* main.c */; };
 		8436050C176C7BA500239947 /* AES_codedecode.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8436050B176C7BA500239947 /* AES_codedecode.1 */; };
+		84360518176C7EC700239947 /* aes256.c in Sources */ = {isa = PBXBuildFile; fileRef = 84360515176C7EC700239947 /* aes256.c */; };
+		84360519176C7EC700239947 /* payload_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = 84360516176C7EC700239947 /* payload_demo.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +27,11 @@
 
 /* Begin PBXFileReference section */
 		84360506176C7BA500239947 /* AES_codedecode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AES_codedecode; sourceTree = BUILT_PRODUCTS_DIR; };
-		84360509176C7BA500239947 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		8436050B176C7BA500239947 /* AES_codedecode.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AES_codedecode.1; sourceTree = "<group>"; };
+		84360515176C7EC700239947 /* aes256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes256.c; sourceTree = "<group>"; };
+		84360516176C7EC700239947 /* payload_demo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = payload_demo.c; sourceTree = "<group>"; };
+		84360517176C7EC700239947 /* aes256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes256.h; sourceTree = "<group>"; };
+		844C7B23177E116A00753C52 /* base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,10 @@
 		84360508176C7BA500239947 /* AES_codedecode */ = {
 			isa = PBXGroup;
 			children = (
-				84360509176C7BA500239947 /* main.c */,
+				84360517176C7EC700239947 /* aes256.h */,
+				84360515176C7EC700239947 /* aes256.c */,
+				844C7B23177E116A00753C52 /* base64.h */,
+				84360516176C7EC700239947 /* payload_demo.c */,
 				8436050B176C7BA500239947 /* AES_codedecode.1 */,
 			);
 			path = AES_codedecode;
@@ -117,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8436050A176C7BA500239947 /* main.c in Sources */,
+				84360518176C7EC700239947 /* aes256.c in Sources */,
+				84360519176C7EC700239947 /* payload_demo.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +224,7 @@
 				84360511176C7BA500239947 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
